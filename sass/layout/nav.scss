@@ -1,0 +1,59 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-top: 5.9rem;
+  gap: 6.4rem;
+  margin-bottom: 12rem;
+
+  &__logo {
+    width: 10.062rem;
+    display: flex;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3.2rem;
+    @include t.text-6-bold;
+    color: c.$White;
+
+    input {
+      display: none;
+    }
+  }
+
+  &__item-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+
+    img {
+      width: 0.8rem;
+
+      transition: transform 0.3s;
+    }
+  }
+
+  &__submenu {
+    display: none;
+  }
+
+  &__auth {
+    margin-left: auto;
+  }
+
+  li:has(input:checked) label > img {
+    transform: rotate(180deg);
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+}

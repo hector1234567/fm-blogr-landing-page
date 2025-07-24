@@ -13,17 +13,20 @@
     />
 
     <title>[Blogr] | Hector BG</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="hero">
-      <nav class="nav">
+      <nav class="nav container">
         <figure class="nav__logo">
           <img src="/images/logo.svg" alt="Logo" />
         </figure>
         <ul class="nav__menu">
           <li>
             <input type="checkbox" id="nav__item--1" />
-            <label for="nav__item--1">Product</label>
+            <label for="nav__item--1" class="nav__item-label"
+              >Product<img src="/images/icon-arrow-light.svg" alt="Arrow"
+            /></label>
             <ul class="nav__submenu nav__submenu--1">
               <li><a href="#Overview">Overview</a></li>
               <li><a href="#Pricing">Pricing</a></li>
@@ -34,7 +37,9 @@
           </li>
           <li>
             <input type="checkbox" id="nav__item--2" />
-            <label for="nav__item--2">Company</label>
+            <label for="nav__item--2" class="nav__item-label"
+              >Company<img src="/images/icon-arrow-light.svg" alt="Arrow"
+            /></label>
             <ul class="nav__submenu nav__submenu--2">
               <li><a href="#About">About</a></li>
               <li><a href="#Team">Team</a></li>
@@ -44,7 +49,9 @@
           </li>
           <li>
             <input type="checkbox" id="nav__item--3" />
-            <label for="nav__item--3">Connect</label>
+            <label for="nav__item--3" class="nav__item-label"
+              >Connect<img src="/images/icon-arrow-light.svg" alt="Arrow"
+            /></label>
             <ul class="nav__submenu nav__submenu--3">
               <li><a href="#Overview">Contact</a></li>
               <li><a href="#Pricing">Newsletter</a></li>
@@ -57,7 +64,7 @@
           <a href="#Sign_Up" class="btn btn--primary">Sign Up</a>
         </div>
       </nav>
-      <header class="header">
+      <header class="header container">
         <h1 class="header__heading">A modern publishing platform</h1>
         <p class="header__subheading">
           Grow your audience and build your online brand
@@ -70,7 +77,7 @@
     </div>
 
     <main class="main">
-      <section class="future">
+      <section class="future container">
         <div class="future__container">
           <h2 class="future__heading">Designed for the future</h2>
           <article class="article">
@@ -95,7 +102,7 @@
           </article>
         </div>
       </section>
-      <section class="infrastructure">
+      <section class="infrastructure container">
         <div class="infrastructure__container">
           <figure class="infrastructure__image">
             <img src="/images/illustration-phones.svg" alt="Phones" />
@@ -111,7 +118,7 @@
           </article>
         </div>
       </section>
-      <section class="features">
+      <section class="features container">
         <div class="features__content">
           <article class="article">
             <h3 class="article__heading">Free, open, simple</h3>
@@ -136,7 +143,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__content">
+      <div class="footer__content container">
         <figure class="footer__logo">
           <img src="/images/logo.svg" alt="Logo" />
         </figure>

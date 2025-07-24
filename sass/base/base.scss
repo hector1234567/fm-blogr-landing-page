@@ -1,0 +1,23 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include t.text-5;
+}
+
+.container {
+  width: 100%;
+  max-width: 111.2rem;
+}

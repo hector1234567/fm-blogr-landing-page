@@ -1,0 +1,26 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: c.$White;
+  margin-bottom: 15.6rem;
+
+  &__heading {
+    @include t.text-1;
+    margin-bottom: 3.2rem;
+  }
+
+  &__subheading {
+    @include t.text-4;
+    margin-bottom: 4.8rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1.6rem;
+  }
+}
