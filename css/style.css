@@ -15,7 +15,7 @@ body {
   font-family: "Overpass", serif;
   font-weight: 400;
   font-size: 1.6rem;
-  letter-spacing: -0.06rem;
+  letter-spacing: 0.06rem;
   line-height: 175%;
 }
 
@@ -33,6 +33,7 @@ body {
   background-image: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-position-x: calc(50% + 42rem), 0;
   background-position-y: calc(50% - 7rem), 0;
+  margin-bottom: 7.1rem;
 }
 
 .nav {
@@ -115,6 +116,154 @@ body {
   gap: 1.6rem;
 }
 
+.future {
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/illustration-editor-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 51rem);
+  background-size: contain;
+  padding-top: 8rem;
+  padding-bottom: 21.9rem;
+}
+.future__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.5rem;
+}
+.future__heading {
+  grid-column: 1/-1;
+  font-family: "Overpass", serif;
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: -0.12rem;
+  line-height: 125%;
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+  margin-bottom: 8.9rem;
+}
+.future .article {
+  grid-column: 1/2;
+}
+.future .article:not(:last-child) {
+  margin-bottom: 6.4rem;
+}
+
+.infrastructure {
+  height: 40rem;
+  background-image: url(/images/bg-pattern-circles.svg), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
+  background-repeat: no-repeat;
+  background-position-x: calc(50% - 47rem), 0;
+  background-position-y: -53rem, 0;
+  color: hsl(0, 100%, 100%);
+  border-radius: 0 10rem 0 10rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.95rem;
+  margin-bottom: 11.55rem;
+}
+.infrastructure__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infrastructure__image {
+  display: flex;
+  height: 57rem;
+  width: 54.2rem;
+  flex-shrink: 0;
+  margin-bottom: -2.7rem;
+  margin-left: -4rem;
+}
+.infrastructure__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.infrastructure__article {
+  max-width: 54rem;
+}
+.infrastructure__heading {
+  font-family: "Overpass", serif;
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: -0.12rem;
+  line-height: 125%;
+  margin-bottom: 1.6rem;
+}
+.infrastructure__text {
+  font-family: "Overpass", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.06rem;
+  line-height: 175%;
+}
+
+.features {
+  height: 78.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/illustration-laptop-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: calc(50% - 50rem);
+  margin-bottom: 12.3rem;
+}
+.features__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6.4rem;
+}
+.features .article {
+  grid-column: 2/3;
+}
+
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 10rem 0 0;
+  display: flex;
+  justify-content: center;
+  padding: 7.2rem 0;
+  color: hsl(0, 100%, 100%);
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
+}
+.footer__logo {
+  display: flex;
+  width: 10.062rem;
+  height: 3.943rem;
+}
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer__menu-section h4 {
+  font-family: "Ubuntu", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 115%;
+  margin-bottom: 3.2rem;
+}
+.footer__menu-section ul {
+  list-style: none;
+}
+.footer__menu-section ul a {
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 115%;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.75;
+}
+
 .btn {
   text-decoration: none;
   font-family: "Ubuntu", serif;
@@ -140,6 +289,24 @@ body {
   border-radius: 99rem;
   border: 0.1rem solid hsl(0, 100%, 100%);
   width: 13.7rem;
+}
+
+.article__heading {
+  font-family: "Overpass", serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  letter-spacing: 0;
+  line-height: 100%;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 1.6rem;
+}
+.article__text {
+  font-family: "Overpass", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.06rem;
+  line-height: 175%;
+  color: hsl(207, 13%, 34%);
 }
 
 /*# sourceMappingURL=style.css.map */

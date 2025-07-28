@@ -1,0 +1,35 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.future {
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/illustration-editor-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 51rem);
+  background-size: contain;
+  padding-top: 8rem;
+  padding-bottom: 21.9rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.5rem;
+  }
+
+  &__heading {
+    grid-column: 1/-1;
+    @include t.text-2;
+    color: c.$Blue-900;
+    text-align: center;
+    margin-bottom: 8.9rem;
+  }
+
+  .article {
+    grid-column: 1/2;
+
+    &:not(:last-child) {
+      margin-bottom: 6.4rem;
+    }
+  }
+}

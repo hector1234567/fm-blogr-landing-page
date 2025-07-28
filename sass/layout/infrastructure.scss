@@ -1,0 +1,52 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.infrastructure {
+  height: 40rem;
+  background-image: url(/images/bg-pattern-circles.svg),
+    linear-gradient(to right, c.$Purple-950, c.$Purple-900);
+  background-repeat: no-repeat;
+  background-position-x: calc(50% - 47rem), 0;
+  background-position-y: -53rem, 0;
+  color: c.$White;
+
+  border-radius: 0 10rem 0 10rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.95rem;
+  margin-bottom: calc(4.95rem + 6.6rem);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+    display: flex;
+    height: 57rem;
+    width: 54.2rem;
+    flex-shrink: 0;
+    margin-bottom: -2.7rem;
+    margin-left: -4rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__article {
+    max-width: 54rem;
+  }
+
+  &__heading {
+    @include t.text-2;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    @include t.text-5;
+  }
+}

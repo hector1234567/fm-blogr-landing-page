@@ -1,0 +1,15 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.article {
+  &__heading {
+    @include t.text-3;
+    color: c.$Blue-900;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    @include t.text-5;
+    color: c.$Blue-600;
+  }
+}

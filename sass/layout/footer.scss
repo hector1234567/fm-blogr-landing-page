@@ -1,0 +1,47 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.footer {
+  background-color: c.$Gray-950;
+  border-radius: 0 10rem 0 0;
+  display: flex;
+  justify-content: center;
+  padding: 7.2rem 0;
+  color: c.$White;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3.2rem;
+  }
+
+  &__logo {
+    display: flex;
+    width: 10.062rem;
+    height: 3.943rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__menu-section {
+    h4 {
+      @include t.text-6-bold;
+      margin-bottom: 3.2rem;
+    }
+
+    ul {
+      list-style: none;
+
+      a {
+        @include t.text-6-regular;
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.75;
+      }
+    }
+  }
+}
