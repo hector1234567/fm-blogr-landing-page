@@ -12,6 +12,14 @@
   &__heading {
     @include t.text-1;
     margin-bottom: 3.2rem;
+
+    br {
+      display: none;
+
+      @media (max-width: t.$Tablet) {
+        display: initial;
+      }
+    }
   }
 
   &__subheading {
@@ -22,5 +30,9 @@
   &__links {
     display: flex;
     gap: 1.6rem;
+  }
+
+  @media (max-width: t.$Tablet) {
+    margin-bottom: 10rem;
   }
 }

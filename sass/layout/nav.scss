@@ -8,9 +8,21 @@
   gap: 6.4rem;
   margin-bottom: 12rem;
 
+  @media (max-width: t.$Tablet) {
+    margin-bottom: 11.2rem;
+  }
+
   &__logo {
     width: 10.062rem;
     display: flex;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: t.$Tablet) {
+      width: 8.166rem;
+    }
   }
 
   &__menu {
@@ -22,6 +34,10 @@
     color: c.$White;
 
     input {
+      display: none;
+    }
+
+    @media (max-width: t.$Tablet) {
       display: none;
     }
   }
@@ -44,16 +60,17 @@
   }
 
   &__auth {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
     margin-left: auto;
+
+    @media (max-width: t.$Tablet) {
+      display: none;
+    }
   }
 
   li:has(input:checked) label > img {
     transform: rotate(180deg);
-  }
-
-  &__auth {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
   }
 }

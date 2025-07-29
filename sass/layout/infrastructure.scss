@@ -16,10 +16,22 @@
   margin-top: 4.95rem;
   margin-bottom: calc(4.95rem + 6.6rem);
 
+  @media (max-width: t.$Tablet) {
+    margin-top: 0;
+    background-position-x: center, 0;
+    background-position-y: -26rem, 0;
+    background-size: 52rem, auto;
+    margin-bottom: 8.2rem;
+  }
+
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: t.$Tablet) {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -27,7 +39,7 @@
     height: 57rem;
     width: 54.2rem;
     flex-shrink: 0;
-    margin-bottom: -2.7rem;
+    margin-top: 2.3rem;
     margin-left: -4rem;
 
     img {
@@ -35,10 +47,22 @@
       width: 100%;
       object-fit: contain;
     }
+
+    @media (max-width: t.$Tablet) {
+      height: 34.65rem;
+      width: 32.7rem;
+      margin-left: 0;
+      margin-top: -15.7rem;
+    }
   }
 
   &__article {
     max-width: 54rem;
+
+    @media (max-width: t.$Tablet) {
+      text-align: center;
+      margin-bottom: 5.55rem;
+    }
   }
 
   &__heading {

@@ -12,13 +12,34 @@
   background-position-x: calc(50% - 50rem);
   margin-bottom: 12.3rem;
 
+  @media (max-width: t.$Tablet) {
+    height: unset;
+    background-image: url(/images/illustration-laptop-mobile.svg);
+    background-size: 69.9rem;
+    background-position-x: center;
+    background-position-y: top;
+    padding-top: 50rem;
+    margin-bottom: 8rem;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 6.4rem;
+
+    @media (max-width: t.$Tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .article {
     grid-column: 2/3;
+
+    @media (max-width: t.$Tablet) {
+      grid-column: 1/2;
+      max-width: 54rem;
+      text-align: center;
+      justify-self: center;
+    }
   }
 }
