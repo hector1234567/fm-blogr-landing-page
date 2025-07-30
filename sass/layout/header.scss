@@ -13,6 +13,11 @@
     @include t.text-1;
     margin-bottom: 3.2rem;
 
+    @media (max-width: t.$Mobile) {
+      @include t.text-2;
+      margin-bottom: 2.4rem;
+    }
+
     br {
       display: none;
 
@@ -25,6 +30,10 @@
   &__subheading {
     @include t.text-4;
     margin-bottom: 4.8rem;
+
+    @media (max-width: t.$Mobile) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__links {
@@ -33,6 +42,10 @@
   }
 
   @media (max-width: t.$Tablet) {
-    margin-bottom: 10rem;
+    margin-bottom: 13.5rem;
+  }
+
+  @media (max-width: t.$Mobile) {
+    margin-bottom: 15.4rem;
   }
 }

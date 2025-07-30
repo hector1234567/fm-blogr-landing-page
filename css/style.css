@@ -10,6 +10,16 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 370px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 310px) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: "Overpass", serif;
@@ -36,6 +46,16 @@ body {
   margin-bottom: 7.1rem;
   padding: 0 4rem;
 }
+@media (max-width: 1170px) {
+  .hero {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 612px) {
+  .hero {
+    padding: 0 1.6rem;
+  }
+}
 
 .nav {
   display: flex;
@@ -47,6 +67,12 @@ body {
 @media (max-width: 1170px) {
   .nav {
     margin-bottom: 11.2rem;
+  }
+}
+@media (max-width: 612px) {
+  .nav {
+    margin-top: 5.6rem;
+    margin-bottom: 9.6rem;
   }
 }
 .nav__logo {
@@ -125,6 +151,16 @@ body {
   line-height: 100%;
   margin-bottom: 3.2rem;
 }
+@media (max-width: 612px) {
+  .header__heading {
+    font-family: "Overpass", serif;
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: -0.12rem;
+    line-height: 125%;
+    margin-bottom: 2.4rem;
+  }
+}
 .header__heading br {
   display: none;
 }
@@ -141,13 +177,23 @@ body {
   line-height: 125%;
   margin-bottom: 4.8rem;
 }
+@media (max-width: 612px) {
+  .header__subheading {
+    margin-bottom: 4rem;
+  }
+}
 .header__links {
   display: flex;
   gap: 1.6rem;
 }
 @media (max-width: 1170px) {
   .header {
-    margin-bottom: 10rem;
+    margin-bottom: 13.5rem;
+  }
+}
+@media (max-width: 612px) {
+  .header {
+    margin-bottom: 15.4rem;
   }
 }
 
@@ -169,6 +215,12 @@ body {
     background-size: 68.956rem;
     background-position-x: center;
     background-position-y: 13rem;
+  }
+}
+@media (max-width: 612px) {
+  .future {
+    background-size: 32.6rem;
+    background-position-y: 15rem;
   }
 }
 .future__container {
@@ -197,11 +249,26 @@ body {
     margin-bottom: 58rem;
   }
 }
+@media (max-width: 612px) {
+  .future__heading {
+    font-family: "Overpass", serif;
+    font-weight: 500;
+    font-size: 2.8rem;
+    letter-spacing: 0;
+    line-height: 100%;
+    margin-bottom: 34rem;
+  }
+}
 .future .article {
   grid-column: 1/2;
 }
 .future .article:not(:last-child) {
   margin-bottom: 6.4rem;
+}
+@media (max-width: 612px) {
+  .future .article:not(:last-child) {
+    margin-bottom: 5.6rem;
+  }
 }
 @media (max-width: 1170px) {
   .future .article {
@@ -231,6 +298,12 @@ body {
     background-position-y: -26rem, 0;
     background-size: 52rem, auto;
     margin-bottom: 8.2rem;
+  }
+}
+@media (max-width: 612px) {
+  .infrastructure {
+    height: 60rem;
+    margin-bottom: 7.9rem;
   }
 }
 .infrastructure__container {
@@ -273,6 +346,12 @@ body {
     margin-bottom: 5.55rem;
   }
 }
+@media (max-width: 612px) {
+  .infrastructure__article {
+    max-width: 32.7rem;
+    padding-bottom: 4rem;
+  }
+}
 .infrastructure__heading {
   font-family: "Overpass", serif;
   font-weight: 500;
@@ -311,6 +390,13 @@ body {
     margin-bottom: 8rem;
   }
 }
+@media (max-width: 612px) {
+  .features {
+    background-size: 32.8rem;
+    padding-top: 26rem;
+    margin-bottom: 10.8rem;
+  }
+}
 .features__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -319,6 +405,11 @@ body {
 @media (max-width: 1170px) {
   .features__content {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 612px) {
+  .features__content {
+    row-gap: 5.6rem;
   }
 }
 .features .article {
@@ -330,6 +421,11 @@ body {
     max-width: 54rem;
     text-align: center;
     justify-self: center;
+  }
+}
+@media (max-width: 612px) {
+  .features .article {
+    max-width: 31.8rem;
   }
 }
 
@@ -346,10 +442,23 @@ body {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3.2rem;
 }
+@media (max-width: 612px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 4.8rem;
+  }
+}
 .footer__logo {
   display: flex;
   width: 10.062rem;
   height: 3.943rem;
+}
+@media (max-width: 612px) {
+  .footer__logo {
+    justify-self: center;
+    margin-bottom: 2.4rem;
+  }
 }
 .footer__logo img {
   width: 100%;

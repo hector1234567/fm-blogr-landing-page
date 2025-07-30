@@ -20,6 +20,11 @@
     background-position-y: 13rem;
   }
 
+  @media (max-width: t.$Mobile) {
+    background-size: 32.6rem;
+    background-position-y: 15rem;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,6 +45,11 @@
     @media (max-width: t.$Tablet) {
       margin-bottom: 58rem;
     }
+
+    @media (max-width: t.$Mobile) {
+      @include t.text-3;
+      margin-bottom: 34rem;
+    }
   }
 
   .article {
@@ -47,6 +57,10 @@
 
     &:not(:last-child) {
       margin-bottom: 6.4rem;
+
+      @media (max-width: t.$Mobile) {
+        margin-bottom: 5.6rem;
+      }
     }
 
     @media (max-width: t.$Tablet) {

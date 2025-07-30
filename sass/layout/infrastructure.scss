@@ -24,6 +24,11 @@
     margin-bottom: 8.2rem;
   }
 
+  @media (max-width: t.$Mobile) {
+    height: 60rem;
+    margin-bottom: 7.9rem;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -62,6 +67,11 @@
     @media (max-width: t.$Tablet) {
       text-align: center;
       margin-bottom: 5.55rem;
+    }
+
+    @media (max-width: t.$Mobile) {
+      max-width: 32.7rem;
+      padding-bottom: 4rem;
     }
   }
 

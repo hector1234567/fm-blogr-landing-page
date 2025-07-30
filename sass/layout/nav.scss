@@ -12,6 +12,11 @@
     margin-bottom: 11.2rem;
   }
 
+  @media (max-width: t.$Mobile) {
+    margin-top: 5.6rem;
+    margin-bottom: 9.6rem;
+  }
+
   &__logo {
     width: 10.062rem;
     display: flex;

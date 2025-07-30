@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&family=Ubuntu:wght@400;500;700&display=swap");
 
 $Tablet: 1170px;
+$Mobile: 612px;
 
 @mixin text-1 {
   font-family: "Overpass", serif;

@@ -13,4 +13,12 @@
   background-position-y: calc(50% + -7rem), 0;
   margin-bottom: 7.1rem;
   padding: 0 4rem;
+
+  @media (max-width: t.$Tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: t.$Mobile) {
+    padding: 0 1.6rem;
+  }
 }

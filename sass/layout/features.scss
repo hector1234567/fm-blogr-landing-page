@@ -22,6 +22,12 @@
     margin-bottom: 8rem;
   }
 
+  @media (max-width: t.$Mobile) {
+    background-size: 32.8rem;
+    padding-top: 26rem;
+    margin-bottom: 10.8rem;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,6 +35,10 @@
 
     @media (max-width: t.$Tablet) {
       grid-template-columns: 1fr;
+    }
+
+    @media (max-width: t.$Mobile) {
+      row-gap: 5.6rem;
     }
   }
 
@@ -40,6 +50,10 @@
       max-width: 54rem;
       text-align: center;
       justify-self: center;
+    }
+
+    @media (max-width: t.$Mobile) {
+      max-width: 31.8rem;
     }
   }
 }
