@@ -48,20 +48,66 @@
   }
 
   &__item-label {
+    text-decoration: none;
+    color: c.$White;
     display: flex;
     align-items: center;
     gap: 0.8rem;
     cursor: pointer;
+    opacity: 0.9;
 
     img {
       width: 0.8rem;
 
       transition: transform 0.3s;
     }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__menu > li {
+    position: relative;
   }
 
   &__submenu {
     display: none;
+    background-color: c.$White;
+    padding: 2.4rem;
+    list-style: none;
+    min-width: 16.8rem;
+    border-radius: 0.5rem;
+
+    a {
+      text-decoration: none;
+      @include t.text-6-regular;
+      color: c.$Purple-950;
+      transition: font-weight 0.1s ease;
+
+      &:hover {
+        @include t.text-6-bold;
+        line-height: 200%;
+      }
+    }
+  }
+
+  li:has(input:checked) &__submenu {
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+  }
+
+  &__submenu--1 {
+    left: -9rem;
+  }
+
+  &__submenu--2 {
+    left: -4rem;
+  }
+
+  &__submenu--3 {
+    left: 0;
   }
 
   &__auth {

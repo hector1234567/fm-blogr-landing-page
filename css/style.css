@@ -108,17 +108,63 @@ body {
   }
 }
 .nav__item-label {
+  text-decoration: none;
+  color: hsl(0, 100%, 100%);
   display: flex;
   align-items: center;
   gap: 0.8rem;
   cursor: pointer;
+  opacity: 0.9;
 }
 .nav__item-label img {
   width: 0.8rem;
   transition: transform 0.3s;
 }
+.nav__item-label:hover {
+  opacity: 1;
+}
+.nav__menu > li {
+  position: relative;
+}
 .nav__submenu {
   display: none;
+  background-color: hsl(0, 100%, 100%);
+  padding: 2.4rem;
+  list-style: none;
+  min-width: 16.8rem;
+  border-radius: 0.5rem;
+}
+.nav__submenu a {
+  text-decoration: none;
+  font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 200%;
+  color: hsl(237, 17%, 21%);
+  transition: font-weight 0.1s ease;
+}
+.nav__submenu a:hover {
+  font-family: "Ubuntu", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 115%;
+  line-height: 200%;
+}
+li:has(input:checked) .nav__submenu {
+  display: block;
+  position: absolute;
+  top: 3.5rem;
+}
+.nav__submenu--1 {
+  left: -9rem;
+}
+.nav__submenu--2 {
+  left: -4rem;
+}
+.nav__submenu--3 {
+  left: 0;
 }
 .nav__auth {
   display: flex;
@@ -481,7 +527,7 @@ body {
   font-weight: 300;
   font-size: 1.6rem;
   letter-spacing: 0;
-  line-height: 115%;
+  line-height: 200%;
   text-decoration: none;
   color: inherit;
   opacity: 0.75;
