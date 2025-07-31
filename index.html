@@ -63,6 +63,34 @@
           <a href="#Login" class="btn btn--text">Login</a>
           <a href="#Sign_Up" class="btn btn--primary">Sign Up</a>
         </div>
+        <a href="#menu" class="nav__burguer">
+          <svg class="burguer" viewBox="0 0 100 100">
+            <rect
+              class="line top"
+              width="80"
+              height="5"
+              x="10"
+              y="25"
+              rx="5"
+            ></rect>
+            <rect
+              class="line middle"
+              width="80"
+              height="5"
+              x="10"
+              y="45"
+              rx="5"
+            ></rect>
+            <rect
+              class="line bottom"
+              width="80"
+              height="5"
+              x="10"
+              y="65"
+              rx="5"
+            ></rect>
+          </svg>
+        </a>
       </nav>
       <header class="header container">
         <h1 class="header__heading">A modern <br />publishing platform</h1>
@@ -178,5 +206,52 @@
         </div>
       </div>
     </footer>
+    <a href="#" class="backdrop" id="menu"></a>
+    <div class="menu">
+      <div class="menu__content">
+        <ul class="menu__links">
+          <li>
+            <input type="checkbox" id="menu__item--1" />
+            <label for="menu__item--1" class="menu__item-label"
+              >Product<img src="/images/icon-arrow-dark.svg" alt="Arrow"
+            /></label>
+            <ul class="menu__submenu menu__submenu--1">
+              <li><a href="#Overview">Overview</a></li>
+              <li><a href="#Pricing">Pricing</a></li>
+              <li><a href="#Marketplace">Marketplace</a></li>
+              <li><a href="#Features">Features</a></li>
+              <li><a href="#Integrations">Integrations</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="menu__item--2" />
+            <label for="menu__item--2" class="menu__item-label"
+              >Company<img src="/images/icon-arrow-dark.svg" alt="Arrow"
+            /></label>
+            <ul class="menu__submenu menu__submenu--2">
+              <li><a href="#About">About</a></li>
+              <li><a href="#Team">Team</a></li>
+              <li><a href="#Blog">Blog</a></li>
+              <li><a href="#Careers">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="menu__item--3" />
+            <label for="menu__item--3" class="menu__item-label"
+              >Connect<img src="/images/icon-arrow-dark.svg" alt="Arrow"
+            /></label>
+            <ul class="menu__submenu menu__submenu--3">
+              <li><a href="#Overview">Contact</a></li>
+              <li><a href="#Pricing">Newsletter</a></li>
+              <li><a href="#Marketplace">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="menu__auth">
+          <a href="#Login" class="btn btn--text">Login</a>
+          <a href="#Sign_Up" class="btn btn--tertiary">Sign Up</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -41,4 +41,17 @@
       background-color: c.$White;
     }
   }
+
+  &--tertiary {
+    padding: 1.5rem 0;
+    color: c.$White;
+    border-radius: 99rem;
+    border: none;
+    width: 13.7rem;
+    background-image: linear-gradient(
+      to right bottom,
+      c.$Orange-300,
+      c.$Red-550
+    );
+  }
 }

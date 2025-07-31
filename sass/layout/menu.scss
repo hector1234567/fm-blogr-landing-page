@@ -1,0 +1,131 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.menu {
+  position: absolute;
+  top: 12.5rem;
+  left: 50%;
+  width: calc(100% - 8rem);
+  background-color: c.$White;
+  border-radius: 0.5rem;
+  padding: 3.2rem 2.4rem 8.5rem 2.4rem;
+  opacity: 0;
+  transform: translate(-50%, -40rem);
+  transition-property: transform, opacity;
+  transition-duration: 0.3s, 0.2s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-in;
+
+  &__links {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      @include t.text-6-bold;
+      color: c.$Blue-900;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin: 1.6rem auto;
+
+      img {
+        width: 1rem;
+
+        transition: transform 0.3s;
+      }
+    }
+  }
+
+  &__submenu {
+    list-style: none;
+    background-color: c.$Gray-100;
+    transform: scaleY(0);
+    opacity: 0;
+    height: 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition-duration: 0s;
+    transform-origin: top;
+  }
+
+  li:has(input:checked) &__submenu {
+    padding: 1.9rem;
+    transform: none;
+    height: auto;
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    a {
+      @include t.text-6-regular;
+      text-decoration: none;
+      color: c.$Blue-900;
+      margin-bottom: 0.8rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  li:has(input:checked) label > img {
+    transform: rotate(180deg);
+  }
+
+  &__auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.6rem;
+    margin-top: 2.5rem;
+
+    .btn--text {
+      color: c.$Blue-900;
+    }
+  }
+
+  @media (max-width: t.$Tablet) {
+    display: none;
+  }
+}
+
+.backdrop {
+  display: none;
+  background-color: rgba($color: #000000, $alpha: 0.05);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: t.$Tablet) {
+  body:has(#menu:target) .menu {
+    display: block;
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-duration: 0.3s, 0.2s;
+    transition-delay: 0s, 0.1s;
+    transition-timing-function: ease-out;
+    transform: translate(-50%, 0);
+  }
+
+  body:has(#menu:target) .backdrop {
+    display: block;
+    opacity: 1;
+  }
+}

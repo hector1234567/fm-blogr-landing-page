@@ -57,7 +57,7 @@
     opacity: 0.9;
 
     img {
-      width: 0.8rem;
+      width: 1rem;
 
       transition: transform 0.3s;
     }
@@ -72,13 +72,21 @@
   }
 
   &__submenu {
-    display: none;
+    display: block;
     background-color: c.$White;
     padding: 2.4rem;
     list-style: none;
     min-width: 16.8rem;
     border-radius: 0.5rem;
     box-shadow: 0 1rem 4rem 0 rgba($color: #000000, $alpha: 0.05);
+    opacity: 0;
+    position: absolute;
+    top: 3.5rem;
+    transform: translateY(-40rem);
+    transition-property: transform, opacity;
+    transition-duration: 0.3s, 0.2s;
+    transition-delay: 0s, 0s;
+    transition-timing-function: ease-in;
 
     a {
       text-decoration: none;
@@ -94,9 +102,12 @@
   }
 
   li:has(input:checked) &__submenu {
-    display: block;
-    position: absolute;
-    top: 3.5rem;
+    opacity: 1;
+    transform: translateY(0);
+    transition-property: transform, opacity;
+    transition-duration: 0.3s, 0.2s;
+    transition-delay: 0s, 0.1s;
+    transition-timing-function: ease-out;
   }
 
   &__submenu--1 {
@@ -124,5 +135,17 @@
 
   li:has(input:checked) label > img {
     transform: rotate(180deg);
+  }
+
+  &__burguer {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: t.$Tablet) {
+      display: flex;
+    }
   }
 }

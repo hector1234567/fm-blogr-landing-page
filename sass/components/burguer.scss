@@ -1,0 +1,32 @@
+@use "../base/colors" as c;
+
+.burguer {
+  width: 3.2rem;
+  fill: c.$White;
+
+  & > .line {
+    transition: y 0.3s ease-in 0.3s, rotate 0.3s ease-in, opacity 0s 0.3s;
+    transform-origin: center;
+  }
+
+  body:has(#menu:target) & > .line {
+    transition: y 0.3s ease-in, rotate 0.3s ease-in 0.3s, opacity 0s 0.3s;
+  }
+
+  body:has(#menu:target) & > .top,
+  body:has(#menu:target) & > .bottom {
+    y: 45;
+  }
+
+  body:has(#menu:target) & > .top {
+    rotate: 45deg;
+  }
+
+  body:has(#menu:target) & > .middle {
+    opacity: 0;
+  }
+
+  body:has(#menu:target) & > .bottom {
+    rotate: -45deg;
+  }
+}
