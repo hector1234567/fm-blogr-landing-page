@@ -96,10 +96,6 @@
       color: c.$Blue-900;
     }
   }
-
-  @media (max-width: t.$Tablet) {
-    display: none;
-  }
 }
 
 .backdrop {
@@ -117,11 +113,11 @@
   body:has(#menu:target) .menu {
     display: block;
     opacity: 1;
+    transform: translate(-50%, 0);
     transition-property: transform, opacity;
     transition-duration: 0.3s, 0.2s;
     transition-delay: 0s, 0.1s;
     transition-timing-function: ease-out;
-    transform: translate(-50%, 0);
   }
 
   body:has(#menu:target) .backdrop {

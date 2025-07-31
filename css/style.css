@@ -657,11 +657,6 @@ li:has(input:checked) .menu__submenu a:last-child {
 .menu__auth .btn--text {
   color: hsl(208, 49%, 24%);
 }
-@media (max-width: 1170px) {
-  .menu {
-    display: none;
-  }
-}
 
 .backdrop {
   display: none;
@@ -678,11 +673,11 @@ li:has(input:checked) .menu__submenu a:last-child {
   body:has(#menu:target) .menu {
     display: block;
     opacity: 1;
+    transform: translate(-50%, 0);
     transition-property: transform, opacity;
     transition-duration: 0.3s, 0.2s;
     transition-delay: 0s, 0.1s;
     transition-timing-function: ease-out;
-    transform: translate(-50%, 0);
   }
   body:has(#menu:target) .backdrop {
     display: block;
