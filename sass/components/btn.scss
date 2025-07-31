@@ -6,8 +6,14 @@
   @include t.text-6-bold;
   text-align: center;
 
+  transition: all 0.3s ease;
+
   &--text {
     color: c.$White;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   &--primary {
@@ -16,6 +22,11 @@
     color: c.$Red-500;
     border-radius: 99rem;
     width: 13.7rem;
+
+    &:hover {
+      color: c.$White;
+      background-color: c.$Red-400;
+    }
   }
 
   &--secondary {
@@ -24,5 +35,10 @@
     border-radius: 99rem;
     border: 0.1rem solid c.$White;
     width: 13.7rem;
+
+    &:hover {
+      color: c.$Red-500;
+      background-color: c.$White;
+    }
   }
 }

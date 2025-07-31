@@ -133,6 +133,7 @@ body {
   list-style: none;
   min-width: 16.8rem;
   border-radius: 0.5rem;
+  box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
 }
 .nav__submenu a {
   text-decoration: none;
@@ -532,6 +533,9 @@ li:has(input:checked) .nav__submenu {
   color: inherit;
   opacity: 0.75;
 }
+.footer__menu-section ul a:hover {
+  text-decoration: underline;
+}
 
 .btn {
   text-decoration: none;
@@ -541,9 +545,13 @@ li:has(input:checked) .nav__submenu {
   letter-spacing: 0;
   line-height: 115%;
   text-align: center;
+  transition: all 0.3s ease;
 }
 .btn--text {
   color: hsl(0, 100%, 100%);
+}
+.btn--text:hover {
+  opacity: 0.75;
 }
 .btn--primary {
   background-color: hsl(0, 100%, 100%);
@@ -552,12 +560,20 @@ li:has(input:checked) .nav__submenu {
   border-radius: 99rem;
   width: 13.7rem;
 }
+.btn--primary:hover {
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(355, 100%, 74%);
+}
 .btn--secondary {
   padding: 1.5rem 0;
   color: hsl(0, 100%, 100%);
   border-radius: 99rem;
   border: 0.1rem solid hsl(0, 100%, 100%);
   width: 13.7rem;
+}
+.btn--secondary:hover {
+  color: hsl(356, 100%, 66%);
+  background-color: hsl(0, 100%, 100%);
 }
 
 .article__heading {
