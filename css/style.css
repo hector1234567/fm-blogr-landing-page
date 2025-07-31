@@ -34,6 +34,12 @@ body {
   max-width: 111.2rem;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
 .hero {
   background-color: hsl(356, 100%, 66%);
   display: flex;

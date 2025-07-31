@@ -29,3 +29,10 @@ body {
   width: 100%;
   max-width: 111.2rem;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
