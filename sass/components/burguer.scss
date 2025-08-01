@@ -5,12 +5,12 @@
   fill: c.$White;
 
   & > .line {
-    transition: y 0.3s ease-in 0.3s, rotate 0.3s ease-in, opacity 0s 0.3s;
+    transition: y 0.15s ease-in 0.15s, rotate 0.15s ease-in, opacity 0s 0.15s;
     transform-origin: center;
   }
 
   body:has(#menu:target) & > .line {
-    transition: y 0.3s ease-in, rotate 0.3s ease-in 0.3s, opacity 0s 0.3s;
+    transition: y 0.15s ease-in, rotate 0.15s ease-in 0.15s, opacity 0s 0.15s;
   }
 
   body:has(#menu:target) & > .top,

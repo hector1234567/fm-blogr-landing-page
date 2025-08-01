@@ -575,6 +575,7 @@ li:has(input:checked) .nav__submenu {
   border-radius: 0.5rem;
   padding: 3.2rem 2.4rem 8.5rem 2.4rem;
   opacity: 0;
+  box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.05);
   transform: translate(-50%, -40rem);
   transition-property: transform, opacity;
   transition-duration: 0.3s, 0.2s;
@@ -754,11 +755,11 @@ li:has(input:checked) .menu__submenu a:last-child {
   fill: hsl(0, 100%, 100%);
 }
 .burguer > .line {
-  transition: y 0.3s ease-in 0.3s, rotate 0.3s ease-in, opacity 0s 0.3s;
+  transition: y 0.15s ease-in 0.15s, rotate 0.15s ease-in, opacity 0s 0.15s;
   transform-origin: center;
 }
 body:has(#menu:target) .burguer > .line {
-  transition: y 0.3s ease-in, rotate 0.3s ease-in 0.3s, opacity 0s 0.3s;
+  transition: y 0.15s ease-in, rotate 0.15s ease-in 0.15s, opacity 0s 0.15s;
 }
 body:has(#menu:target) .burguer > .top, body:has(#menu:target) .burguer > .bottom {
   y: 45;
